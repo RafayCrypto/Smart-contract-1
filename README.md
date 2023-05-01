@@ -29,3 +29,21 @@ contract trading
         return message;
     }
 }
+
+
+// you can also do this way such that your string message box will be public and can be shown differently from your function
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.7.5;
+
+
+
+contract trading
+{
+    string public message = "CRYPTOCURRENCY";
+
+    function spot() public view returns(string memory)
+    {
+        return message;
+    }
+}
